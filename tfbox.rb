@@ -5,21 +5,21 @@
 class Tfbox < Formula
   desc "Another terraform version selector, combined with docker"
   homepage "https://github.com/vahid-haghighat/tfbox"
-  version "1.3.0"
+  version "1.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.0/tfbox_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "24cd0473f41f2d362dcace2c10d8aa08ef43934251266b1cbc52e8c654cc7b0e"
+      url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.1/tfbox_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "e437fe08f0abdfc0cc117e68ad2a74664e4b95242a51c003dad1dc305adccd94"
 
       def install
         bin.install "tfbox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.0/tfbox_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "395c10e6eac903f929d97e4f7149048bdb4e188ef0a27fe0c162d31d037ab6e6"
+      url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.1/tfbox_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "0f4e43aa7fecc8e4be212ec72dfccda95adf68f7629333b2c8bc9641bec4f758"
 
       def install
         bin.install "tfbox"
@@ -30,8 +30,8 @@ class Tfbox < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.0/tfbox_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "ab052e840febddcfe8df356b98d9008091a7cd8d0cf26e24958ac9e910951d19"
+        url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.1/tfbox_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "67434efda8ae02d90924fdd749ab9ed7baabe1af5ac6e3d75ab036b719fb252a"
 
         def install
           bin.install "tfbox"
@@ -40,8 +40,8 @@ class Tfbox < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.0/tfbox_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "3a6fb43a6d2379704fcf67ec0e362e10822da855d372381fd317fd1b1822c1b0"
+        url "https://github.com/vahid-haghighat/tfbox/releases/download/v1.3.1/tfbox_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "b2b9fe042b9ef8899a96ebc9c8fa149ccc3b7e162d063a8f95356c607f83eacb"
 
         def install
           bin.install "tfbox"
